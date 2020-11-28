@@ -1,10 +1,24 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Main } from '../pages';
+import { 
+  Courses, 
+  Goals, 
+  Indie, 
+  Main, 
+  Projects, 
+  Stack, 
+  About 
+} from '../pages';
 
 const Routes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Main} />
+    <Route path="/about" exact component={About} />
+    <Route path="/stack" exact component={Stack} />
+    <Route path="/courses" exact component={Courses} />
+    <Route path="/projects" exact component={Projects} />
+    <Route path="/goals" exact component={Goals} />
+    <Route path="/indie" exact component={Indie} />
   </Switch>
 );
 
