@@ -1,11 +1,24 @@
 import styled from 'styled-components'
 import { shade } from 'polished';
 
+
+
 export const Container = styled.div`
   width: 1140px;
   margin: 0 auto;
   font-family: 'Roboto Slab', serif;
+
+  > img {
+    position: absolute;
+    bottom: 0;
+    left: 700px;
+
+    & + img {
+      left: 800px;
+    }
+  }
 `
+
 
 export const Content = styled.div`
   margin-top: 100px;

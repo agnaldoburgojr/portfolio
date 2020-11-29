@@ -26,6 +26,7 @@ export const Photo = styled.div`
 
   img {
     width: 200px;
+    height: 200px;
     border-radius: 100px;
   }
 `
@@ -33,7 +34,6 @@ export const Description = styled.div`
   width: 900px;
   margin-left: 52px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
 
   a {
     text-decoration: none;

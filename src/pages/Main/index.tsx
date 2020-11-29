@@ -1,5 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { Container, Content, Title } from './styles'
+import photo from '../../assets/photo1.png'
+import brush from '../../assets/brush2.png'
 
 const Main: React.FC = () => {
   const [word, setWord] = useState('')
@@ -27,6 +29,8 @@ const Main: React.FC = () => {
         <p>engenheiro e desenvolvedor de software. Este é meu portfólio especial para vocês!</p>
         <button type='button'>Eu na Indie Campers...</button>
       </Content>
+      <img src={brush} alt="photo"/>
+      <img src={photo} alt="photo"/>
     </Container>
   );
 };

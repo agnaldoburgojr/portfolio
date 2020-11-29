@@ -11,7 +11,7 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
    ${props =>
-    props.backgroundIndex === 1 &&
+    props.backgroundIndex !== 0 &&
     css`
      background-color: #fff
     `};
