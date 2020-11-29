@@ -5,7 +5,19 @@ interface LinkProps {
   isActive?: boolean;
 }
 
-export const Container = styled.div``;
+interface ContainerProps {
+  backgroundIndex?: number;
+}
+
+export const Container = styled.div<ContainerProps>`
+   ${props =>
+    props.backgroundIndex === 1 &&
+    css`
+     background-color: #fff
+    `};
+  width: 100%;
+  height: 100vh;
+`;
 
 export const Header = styled.div`
   width: 100%;

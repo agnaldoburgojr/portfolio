@@ -9,7 +9,7 @@ const MainLayout: React.FC = ({children}) => {
   }, [])
 
   return (
-    <Container>
+    <Container backgroundIndex={index}>
       <Header>
         <Nav>
           <Link to="/" isActive={index === 0} onClick={()=> handleClick(0)}>home</Link>
