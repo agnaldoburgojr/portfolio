@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { Container, Content, Title } from './styles'
+import { Container, Content, Title, Image } from './styles'
 import photo from '../../assets/photo1.png'
 import brush from '../../assets/brush2.png'
 
@@ -27,10 +27,12 @@ const Main: React.FC = () => {
         
         <h1>eu sou Agnaldo Burgo Junior,</h1>
         <p>engenheiro e desenvolvedor de software. Este é meu portfólio especial para vocês!</p>
-        <button type='button'>Eu na Indie Campers...</button>
+        <button type='button'>Porque quero fazer parte</button>
       </Content>
-      <img src={brush} alt="photo"/>
-      <img src={photo} alt="photo"/>
+      <Image>
+        <img src={brush} alt="brush"/>
+        <img src={photo} alt="photo"/>
+      </Image>
     </Container>
   );
 };

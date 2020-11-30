@@ -5,16 +5,9 @@ export const Container = styled.div`
   width: 1140px;
   margin: 0 auto;
   font-family: 'Roboto Slab', serif;
+  display: flex;
 
-  > img {
-    position: absolute;
-    bottom: 0;
-    left: 700px;
-
-    & + img {
-      left: 800px;
-    }
-  }
+ 
 `
 
 export const Content = styled.div`
@@ -62,4 +55,18 @@ export const Title = styled.div`
   span {
     color: #5440cc;
   }
+`
+
+export const Image = styled.div`
+  position: relative;
+
+  img {
+    position: absolute;
+
+    & + img {
+      left: 120px;
+    }
+  }
+
+  
 `
