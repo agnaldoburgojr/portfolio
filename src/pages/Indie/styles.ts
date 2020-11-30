@@ -6,26 +6,24 @@ export const Container = styled.div`
   margin: 0 auto;
   font-family: 'Roboto Slab', serif;
   display: flex;
+  justify-content: center
+
 `
 
 export const Content = styled.div`
-  margin-top: 100px;
-  max-width: 550px;
+  margin-top: 48px;
+  text-align: center;
+  max-width: 800px;
 
   h2 {
     font-size: 28px;
   }
 
-  h1 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 28px;
-  }
-
-  p {
+  h3 {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.2;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
+    font-size: 16px;
   }
 
   button {
@@ -45,24 +43,14 @@ export const Content = styled.div`
         background: ${shade(0.2, '#ff5900')};
       }
     }
+  
 `
 
 export const Title = styled.div`
   font-weight: 600;
+  margin-bottom: 36px;
 
   span {
     color: #5440cc;
-  }
-`
-
-export const Image = styled.div`
-  position: relative;
-
-  img {
-    position: absolute;
-
-    & + img {
-      left: 120px;
-    }
   }
 `
