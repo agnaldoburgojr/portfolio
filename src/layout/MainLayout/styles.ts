@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components'
 import { Link as LinkRouter } from 'react-router-dom'
-import { shade } from 'polished'
 interface LinkProps {
   isActive?: boolean;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { Container, Content, Title, Image } from './styles'
-import photo from '../../assets/photo1.png'
+import profile from '../../assets/photo1.png'
 import brush from '../../assets/brush2.png'
 import { useHistory } from 'react-router-dom';
 
@@ -17,7 +17,7 @@ const Main: React.FC = () => {
 
   useEffect(()=> {
     addWord(['I', 'n', 'd', 'i', 'e', ' ', 'C', 'a', 'm', 'p', 'e', 'r', 's', ' ', ':', ')'])
-  }, [])
+  }, [addWord])
 
   const handleClique = useCallback(()=> {
     history.push('/indie')
@@ -37,7 +37,7 @@ const Main: React.FC = () => {
       </Content>
       <Image>
         <img src={brush} alt="brush"/>
-        <img src={photo} alt="photo"/>
+        <img src={profile} alt="profile"/>
       </Image>
     </Container>
   );

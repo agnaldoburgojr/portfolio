@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Title, Content, Photo, Description } from './styles'
-import profilePhoto from '../../assets/avatar.jpg'
+import profile from '../../assets/avatar.jpg'
 
 const About: React.FC = () => {
   
@@ -9,7 +9,7 @@ const About: React.FC = () => {
       <Title>Um pouco sobre mim</Title>
       <Content>
         <Photo>
-          <img src={profilePhoto} alt='Photo'/>
+          <img src={profile} alt='profile'/>
         </Photo>
         <Description>
           <p>Tenho 29 anos, solteiro e resido atualmente em Marília-SP. Sou formado em Análise e Desenvolvimento de Software pela FATEC de Ourinhos atuo com desenvolvimento de software de forma ativa há 6 anos sendo desenvolvedor full-stack, atuando no frontend, backend e mobile.</p>
