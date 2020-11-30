@@ -17,7 +17,6 @@ export const Container = styled.div`
   }
 `
 
-
 export const Content = styled.div`
   margin-top: 100px;
   max-width: 550px;
@@ -56,7 +55,6 @@ export const Content = styled.div`
       }
     }
 `
-
 
 export const Title = styled.div`
   font-weight: 600;
