@@ -1,31 +1,52 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { shade } from 'polished';
+import { Link as LinkRouter } from 'react-router-dom'
+interface LinkProps {
+  isActive?: boolean;
+}
 
 export const Container = styled.div`
-  width: 1140px;
-  margin: 0 auto;
+  background-color: #000;
+  width: 100%;
+  max-height: 700px;
+  height: 100vh;
+  
+  color: #fff;
   font-family: 'Roboto Slab', serif;
   display: flex;
+  
 `
 
 export const Content = styled.div`
-  margin-top: 100px;
-  max-width: 550px;
+  margin: 0 auto;
+  max-width: 1366px;
+  width: 84%;
+
+  display: flex;
+  flex-direction: column;
 
   h2 {
-    font-size: 28px;
+    margin-top: 72px;
+    font-size: 32px;
+    margin-bottom: 28px;
+
+    span + span {
+      color: #2c00e3;
+      font-size: 40px;
+    }
   }
 
   h1 {
-    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
     font-weight: 700;
-    margin-bottom: 28px;
+    margin-bottom: 4px;
   }
 
   p {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.2;
-    margin-bottom: 24px;
+    line-height: 1.8;
+    margin-bottom: 36px;
   }
 
   button {
@@ -47,22 +68,66 @@ export const Content = styled.div`
     }
 `
 
-export const Title = styled.div`
-  font-weight: 600;
+export const Menu = styled.div`
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 70px;
+`;
 
-  span {
-    color: #5440cc;
+export const Hero = styled.div`
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const Social = styled.div`
+  display: flex;
+
+  svg {
+    color: #2c00e3;
+    font-size: 36px;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: ${shade(0.2, '#2c00e3')};
+    }
+
+    
+  }
+
+  a  + a {
+    margin-left: 16px;
   }
 `
 
-export const Image = styled.div`
-  position: relative;
+export const Nav = styled.nav`
+  width: 720px;
+  display: flex;
+  justify-content: space-between;
+`;
 
-  img {
-    position: absolute;
+export const Link = styled(LinkRouter)<LinkProps>`
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff; 
+    padding: 2px 0;
+    transition: color 0.2s;
+    ${props =>
+    props.isActive &&
+    css`
+      border-bottom: 2px solid #2c00e3;
+      color: #2c00e3;
+      font-weight: 700;
+      
+    `}
 
-    & + img {
-      left: 120px;
+    &:hover {
+      color: #2c00e3;
     }
-  }
 `

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Title, Content, Photo, Description } from './styles'
-import profile from '../../assets/avatar.jpg'
+import profile from '../../assets/photo4.png'
 
 const About: React.FC = () => {
   

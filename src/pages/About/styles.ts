@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 1140px;
+  width: 84%;
+  max-width: 1366px;
   margin: 0 auto;
   background-color: #fff;
 `
@@ -12,26 +13,22 @@ export const Title = styled.h2`
   font-size: 28px;
 `
 export const Content = styled.div`
-  margin-top: 48px;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-top: 72px;
 `
 export const Photo = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 240px;
-  height: 240px;
- 
 
   img {
-    width: 200px;
-    height: 200px;
+    width: 400px;
     border-radius: 100px;
   }
 `
 export const Description = styled.div`
-  width: 900px;
+  width: 700px;
   margin-left: 52px;
   font-family: 'Roboto', sans-serif;
 
