@@ -1,40 +1,51 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 84%;
-  max-width: 1366px;
-  margin: 0 auto;
-  background-color: #fff;
-`
-
-export const Title = styled.h2`
-  font-family: 'Roboto Slab', serif;
-  margin-top: 48px;
-  font-size: 28px;
-`
-export const Content = styled.div`
+  background-color: #E4E4E4;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 72px;
+  
+  font-family: 'Open Sans', sans-serif;
+  color: #151C26;
+  font-weight: 400;
+  font-size: 16px;
 `
-export const Photo = styled.div`
-  display: flex;
 
-  img {
-    width: 400px;
-    border-radius: 100px;
-  }
+export const Content = styled.div`
+  margin: 0 auto;
+  max-width: 1366px;
+  width: 80%;
+  padding: 80px 0;
+  
+
+  display: flex;
+  flex-direction: column;
 `
+
+export const Title = styled.div`
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+
+  h2 {
+    color:  #485466;
+    font-size: 42px;
+    font-weight: 800;
+  }
+
+  h3 {
+    margin-top: -16px;
+    color: #151C26;
+    font-size: 64px;
+    font-weight: 800;
+  }
+`;
+
 export const Description = styled.div`
-  width: 700px;
-  margin-left: 52px;
-  font-family: 'Roboto', sans-serif;
+  
+  margin-left: 240px;
 
   a {
     text-decoration: none;
-    color: #ff5900;
+    color: #485466;
   }
 
   p {

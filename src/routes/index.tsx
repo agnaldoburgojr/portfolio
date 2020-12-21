@@ -11,15 +11,16 @@ import {
 } from '../pages';
 
 const Routes: React.FC = () => (
-  <Switch>
-    <Route path="/" exact component={Main} />
-    <Route path="/about" exact component={About} />
-    <Route path="/stack" exact component={Stack} />
+  <>
+    <Route component={Main} />
+    <Route component={About} />
+    <Route component={Goals} />
+    {/* <Route path="/stack" exact component={Stack} />
     <Route path="/courses" exact component={Courses} />
     <Route path="/projects" exact component={Projects} />
     <Route path="/goals" exact component={Goals} />
-    <Route path="/indie" exact component={Indie} />
-  </Switch>
+    <Route path="/indie" exact component={Indie} /> */}
+  </>
 );
 
 export default Routes;

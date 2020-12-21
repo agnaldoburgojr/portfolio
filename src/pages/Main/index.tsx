@@ -1,7 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { Container, Content, Menu, Hero, Social, Nav, Link } from './styles'
-import profile from '../../assets/photo3.jpg'
-import { AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
+import { Container, Content, Header, TextContent, Title, Social } from './styles'
+import { FaLinkedin, FaGithub, FaBars } from "react-icons/fa";
 
 const Main: React.FC = () => {
   const [word, setWord] = useState('')
@@ -25,36 +24,22 @@ const Main: React.FC = () => {
   return (
     <Container>
       <Content>
-        <Menu>
-          <Nav>
-            <Link to="/" isActive={index === 0} onClick={()=> handleClick(0)}>home</Link>
-            <Link to="/about" isActive={index === 1} onClick={()=> handleClick(1)}>sobre mim</Link>
-            <Link to="/goals" isActive={index === 5} onClick={()=> handleClick(5)}>objetivos como dev</Link>
-            <Link to="/stack" isActive={index === 2} onClick={()=> handleClick(2)}>stack e interesses</Link>
-            <Link to="/courses" isActive={index === 3} onClick={()=> handleClick(3)}>formação</Link>
-            <Link to="/projects" isActive={index === 4} onClick={()=> handleClick(4)}>projetos</Link>
-          </Nav>
-        </Menu>
-        <Hero>
-          <div>
-            <h2>hello, <span>{word}</span> <span>_</span></h2>
-            <h1>eu sou Agnaldo Burgo Junior,</h1>
-            <p>engenheiro e desenvolvedor de software e este é o meu portfólio, <br/> seja bem-vindo(a)!</p>
-            <Social>
-              <a href='https://www.linkedin.com/in/agnaldoburgojr/' target='blank'><AiFillLinkedin/></a>
-              <a href='https://github.com/agnaldoburgojr' target='blank'><AiOutlineGithub/></a>
-            </Social>
-
-
-          </div>
-          <div>
-            <img src={profile} alt="profile"/>
-          </div>
-
-        </Hero>
-        
+        <Header>
+          <FaBars/>
+        </Header>
+        <TextContent>
+          <span>hello, world! Eu sou</span> 
+          <Title>
+            <h1>Agnaldo Burgo</h1>
+            <h2>Junior</h2>
+          </Title>
+          <p>engenheiro e desenvolvedor de software e este é o meu portfólio, seja bem-vindo(a)!</p>
+          <Social>
+              <a href='https://www.linkedin.com/in/agnaldoburgojr/' target='blank'><FaLinkedin/></a>
+              <a href='https://github.com/agnaldoburgojr' target='blank'><FaGithub/></a>
+          </Social>
+        </TextContent>          
       </Content>
-      
     </Container>
   );
 };
